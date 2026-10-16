@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRICK BREAKER</title>
+    <title>BRICK BREAKER ONLINE </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>WELCOME TO BRICK BREAKER GAME </h1>
-    
+    <!-- You may adjust the content size -->
+    <div id="main">
+        <h2> &#129521; Brick Breaker &#129521;</h2>
+        <p>SCORE: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; LIVES: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; LEVEL:
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </p>\
+        <center>
+            <div class="game_body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consectetur ut? Sit ducimus dolorem amt
+                officia saepe nihil ipsum nulla. </div>
+        </center>
+        <audio id="startButtonAudio">
+            <source src="./audiofile.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <center><button onclick="playStartAudio()">Start</button></center>
+    </div>
+    <!-- 3. Add JavaScript to trigger the playback -->
+    <script>
+        function playStartAudio() {
+            var audio = document.getElementById("startButtonAudio");
+            audio.play();
+        }
+    </script>
 </body>
+
 </html>
