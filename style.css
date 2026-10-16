@@ -43,8 +43,8 @@ p{
     width: 486px;
     background: #010218; 
     color: aliceblue;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 18px;
+    padding: 10px;
 }
 button{
     width: 80px;
