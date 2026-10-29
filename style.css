@@ -18,11 +18,11 @@ body{
 #main{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
+
     display: grid;
 }
 h2{
-  
+
    margin-top: 10px;
     font-size: xx-large;
     font-style: italic;
@@ -34,14 +34,14 @@ p{
     align-items: center;
    font-size: medium;
    font-style: normal;
-    color: aliceblue;   
+    color: aliceblue;
 }
 .game_body{
 
     align-items: center;
     height: 450px;
     width: 486px;
-    background: #010218; 
+    background: #010218;
     color: aliceblue;
     border-radius: 18px;
     padding: 10px;
@@ -53,7 +53,6 @@ button{
     color: antiquewhite;
    border-radius: 8px;
 }
-
 
 .brick{
     width: 50px;
@@ -74,4 +73,46 @@ button{
     height: 12px;
     background-color: white;
     position: relative;
+}
+
+.game_body{
+    position: relative;
+}
+
+.ball{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffd54a;
+    left: 0;
+    top: 0;
+}
+
+.brick.broken{
+    visibility: hidden;
+}
+
+.bg-transparent{
+    width: 50px;
+    height: 15px;
+}
+
+#message{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 68%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffd54a;
+    text-shadow: 0 0 6px #000;
+    pointer-events: none;
+}
+
+#hud{
+    color: #ffd54a;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0;
 }
